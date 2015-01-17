@@ -1,0 +1,25 @@
+{
+  "name": "Hassler",
+  "version": "0.0.0",
+  "description": "2015 YO Website",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/YaleOutdoors/Hassler.git"
+  },
+  "keywords": [
+    "yale",
+    "outdoors"
+  ],
+  "author": "Sylvan Zheng, Marcus Russi",
+  "license": "BSD",
+  "bugs": {
+    "url": "https://github.com/YaleOutdoors/Hassler/issues"
+  },
+  "dependencies": {
+    "express": "~4.11.0"
+  }
+}
