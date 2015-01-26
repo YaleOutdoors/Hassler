@@ -9,9 +9,9 @@ router.get('/', function(req, res, next) {
 });
 
 /* Trips */
-//router.get('/trips', trip_api.index);
+router.get('/trips', trip_api.all);
 
-router.get('/trip/:id', trip_api.get_by_id);
+router.get('/trip/:id', trip_api.by_id);
 
 //router.post('/trip/new', trip_api.create);
 
