@@ -12,6 +12,11 @@
     "express": "~4.11.0",
     "jade": "~1.9.0",
     "morgan": "~1.5.1",
-    "serve-favicon": "~2.2.0"
+    "serve-favicon": "~2.2.0",
+    "knex": "~0.7.3",
+    "bookshelf": "~0.7.9",
+    "pg": "~4.2.0",
+    "when": "~3.7.0",
+    "lodash": "~2.4.1"
   }
 }

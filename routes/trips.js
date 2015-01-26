@@ -1,10 +1,25 @@
 var express = require('express');
-var trips = require('../trips');
+var data = require('../models/trip');
 var router = express.Router();
 
 /* GET trips listing. */
 router.get('/', function(req, res, next) {
-  res.json(trips.get_trip(req.query.id));
+});
+
+router.get('/:id', function(req, res, next) {
+  data.Trip.forge({id: req.params.id})
+    .fetch()
+    .then(function(trip) {
+      res.json({error: false,
+                data: trip.toJSON()
+      });
+    })
+    .otherwise(function(error) {
+      res.status(500).json({error: true,
+                            data: error.message
+      });
+    });
+
 });
 
 router.post('/new', function(req, res, next) {
