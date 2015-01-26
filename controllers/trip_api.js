@@ -1,4 +1,4 @@
-var data = require('../models/trip');
+var data = require('../models');
 
 var controller = {};
 
