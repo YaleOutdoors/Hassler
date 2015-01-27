@@ -66,7 +66,7 @@ function createTables () {
 }
 
 createTables().then(function() {
-  console.log('Tables created!!');
+  console.log('Tables created!');
   process.exit(0);
 }).otherwise(function (error) {
   throw error;
