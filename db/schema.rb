@@ -11,37 +11,18 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 0) do
+ActiveRecord::Schema.define(version: 20150211021147) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
-  create_table "signups", force: true do |t|
-    t.integer "trip_id",   null: false
-    t.integer "user_id",   null: false
-    t.integer "car_seats", null: false
-    t.text    "notes",     null: false
-  end
-
   create_table "trips", force: true do |t|
-    t.text    "desc",       null: false
-    t.date    "start_date", null: false
-    t.date    "end_date",   null: false
-    t.integer "cost",       null: false
+    t.text     "title"
+    t.text     "description"
+    t.integer  "cost"
+    t.date     "date"
+    t.datetime "created_at"
+    t.datetime "updated_at"
   end
-
-  create_table "trips_users", force: true do |t|
-    t.integer "trip_id", null: false
-    t.integer "user_id", null: false
-  end
-
-  create_table "users", force: true do |t|
-    t.string "username", null: false
-    t.string "email",    null: false
-    t.string "name",     null: false
-  end
-
-  add_index "users", ["email"], name: "users_email_unique", unique: true, using: :btree
-  add_index "users", ["username"], name: "users_username_unique", unique: true, using: :btree
 
 end
