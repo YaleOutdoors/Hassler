@@ -28,6 +28,8 @@ GEM
       thread_safe (~> 0.1)
       tzinfo (~> 1.1)
     arel (5.0.1.20140414130214)
+    browserify-rails (0.7.1)
+      sprockets (~> 2.0)
     builder (3.2.2)
     erubis (2.7.0)
     execjs (2.3.0)
@@ -101,6 +103,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  browserify-rails (~> 0.7)
   jbuilder (~> 2.0)
   pg
   rails (= 4.1.6)
