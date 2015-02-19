@@ -222,3 +222,376 @@ Processing by TripsController#show as HTML
   Parameters: {"id"=>"1"}
   [1m[35mTrip Load (0.2ms)[0m  SELECT  "trips".* FROM "trips"  WHERE "trips"."id" = $1 LIMIT 1  [["id", 1]]
 Completed 200 OK in 9ms (Views: 0.1ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-02-18 22:54:02 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (31.9ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /home/s/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/railties-4.2.0/lib/rails/templates/rails/welcome/index.html.erb (1.8ms)
+Completed 200 OK in 10ms (Views: 9.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/trips/1" for 127.0.0.1 at 2015-02-18 22:54:07 -0500
+Processing by TripsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mTrip Load (22.4ms)[0m  SELECT  "trips".* FROM "trips" WHERE "trips"."id" = $1 LIMIT 1  [["id", 1]]
+Completed 200 OK in 103ms (Views: 0.2ms | ActiveRecord: 87.6ms)
+
+
+Started GET "/trips/1" for 127.0.0.1 at 2015-02-18 22:55:50 -0500
+Processing by TripsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mTrip Load (0.5ms)[0m  [1mSELECT  "trips".* FROM "trips" WHERE "trips"."id" = $1 LIMIT 1[0m  [["id", 1]]
+Completed 401 Unauthorized in 14ms (Views: 0.2ms | ActiveRecord: 3.2ms)
+
+
+Started GET "/trips/1?ticket=ST-1602154-0hAScfHfQ0Rg1TY0wiFs-vmssoprdapp01" for 127.0.0.1 at 2015-02-18 22:55:50 -0500
+
+
+Started GET "/trips/1" for 127.0.0.1 at 2015-02-18 22:55:50 -0500
+Processing by TripsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mTrip Load (0.3ms)[0m  SELECT  "trips".* FROM "trips" WHERE "trips"."id" = $1 LIMIT 1  [["id", 1]]
+Completed 401 Unauthorized in 1ms (Views: 0.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/trips/1?ticket=ST-1602155-ccT6urMsqiHMEOl3VKD2-vmssoprdapp01" for 127.0.0.1 at 2015-02-18 22:55:50 -0500
+
+
+Started GET "/trips/1" for 127.0.0.1 at 2015-02-18 22:55:50 -0500
+Processing by TripsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mTrip Load (0.3ms)[0m  [1mSELECT  "trips".* FROM "trips" WHERE "trips"."id" = $1 LIMIT 1[0m  [["id", 1]]
+Completed 401 Unauthorized in 1ms (Views: 0.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/trips/1?ticket=ST-1602156-Uuh2hRCx4TXJUicOlpRJ-vmssoprdapp01" for 127.0.0.1 at 2015-02-18 22:55:51 -0500
+
+
+Started GET "/trips/1" for 127.0.0.1 at 2015-02-18 22:55:51 -0500
+Processing by TripsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mTrip Load (0.3ms)[0m  SELECT  "trips".* FROM "trips" WHERE "trips"."id" = $1 LIMIT 1  [["id", 1]]
+Completed 401 Unauthorized in 1ms (Views: 0.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/trips/1?ticket=ST-1602157-h5GZn9TXBzbd6YNW5qxe-vmssoprdapp01" for 127.0.0.1 at 2015-02-18 22:55:51 -0500
+
+
+Started GET "/trips/1" for 127.0.0.1 at 2015-02-18 22:55:51 -0500
+Processing by TripsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mTrip Load (0.3ms)[0m  [1mSELECT  "trips".* FROM "trips" WHERE "trips"."id" = $1 LIMIT 1[0m  [["id", 1]]
+Completed 401 Unauthorized in 1ms (Views: 0.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/trips/1?ticket=ST-1602158-thQLkPYc1KTFcoLsUsYD-vmssoprdapp01" for 127.0.0.1 at 2015-02-18 22:55:51 -0500
+
+
+Started GET "/trips/1" for 127.0.0.1 at 2015-02-18 22:55:51 -0500
+Processing by TripsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mTrip Load (0.2ms)[0m  SELECT  "trips".* FROM "trips" WHERE "trips"."id" = $1 LIMIT 1  [["id", 1]]
+Completed 401 Unauthorized in 1ms (Views: 0.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/trips/1?ticket=ST-1602159-Aczu1SeoYVtKQdSIHbuA-vmssoprdapp01" for 127.0.0.1 at 2015-02-18 22:55:51 -0500
+
+
+Started GET "/trips/1" for 127.0.0.1 at 2015-02-18 22:55:51 -0500
+Processing by TripsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mTrip Load (0.5ms)[0m  [1mSELECT  "trips".* FROM "trips" WHERE "trips"."id" = $1 LIMIT 1[0m  [["id", 1]]
+Completed 401 Unauthorized in 3ms (Views: 0.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/trips/1?ticket=ST-1602160-yw7CnScKrg9apyHkdAAz-vmssoprdapp01" for 127.0.0.1 at 2015-02-18 22:55:51 -0500
+
+
+Started GET "/trips/1?ticket=ST-1602160-yw7CnScKrg9apyHkdAAz-vmssoprdapp01" for 127.0.0.1 at 2015-02-18 22:56:54 -0500
+
+
+Started GET "/trips/1?ticket=ST-1602199-JVKlSxeZFLUgTTNcwXe2-vmssoprdapp01" for 127.0.0.1 at 2015-02-18 22:56:55 -0500
+
+
+Started GET "/trips/1" for 127.0.0.1 at 2015-02-18 22:56:55 -0500
+Processing by TripsController#show as HTML
+  Parameters: {"id"=>"1"}
+Completed 500 Internal Server Error in 0ms
+
+NoMethodError (undefined method `[]' for nil:NilClass):
+  app/controllers/trips_controller.rb:4:in `show'
+
+
+  Rendered /home/s/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.6ms)
+  Rendered /home/s/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.1ms)
+  Rendered /home/s/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /home/s/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (19.4ms)
+
+
+Started GET "/trips%271" for 127.0.0.1 at 2015-02-18 22:57:27 -0500
+
+ActionController::RoutingError (No route matches [GET] "/trips%271"):
+  actionpack (4.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.0) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/static.rb:113:in `call'
+  railties (4.2.0) lib/rails/engine.rb:518:in `call'
+  railties (4.2.0) lib/rails/application.rb:164:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  rack (1.6.0) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.0) lib/rack/handler/webrick.rb:89:in `service'
+  /home/s/.rbenv/versions/2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /home/s/.rbenv/versions/2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /home/s/.rbenv/versions/2.1.2/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/s/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.6ms)
+  Rendered /home/s/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.0ms)
+  Rendered /home/s/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (11.7ms)
+  Rendered /home/s/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.7ms)
+  Rendered /home/s/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (47.7ms)
+
+
+Started GET "/trips/1" for 127.0.0.1 at 2015-02-18 22:57:29 -0500
+Processing by TripsController#show as HTML
+  Parameters: {"id"=>"1"}
+Completed 500 Internal Server Error in 7ms
+
+NameError (undefined local variable or method `controller' for #<TripsController:0x007f5519c7c1d8>):
+  app/controllers/trips_controller.rb:4:in `show'
+
+
+  Rendered /home/s/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.9ms)
+  Rendered /home/s/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.2ms)
+  Rendered /home/s/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /home/s/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (19.2ms)
+
+
+Started GET "/trips/1" for 127.0.0.1 at 2015-02-18 22:57:44 -0500
+Processing by TripsController#show as HTML
+  Parameters: {"id"=>"1"}
+Completed 500 Internal Server Error in 0ms
+
+NoMethodError (undefined method `[]' for nil:NilClass):
+  app/controllers/trips_controller.rb:4:in `show'
+
+
+  Rendered /home/s/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.5ms)
+  Rendered /home/s/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.1ms)
+  Rendered /home/s/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /home/s/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (17.0ms)
+
+
+Started GET "/trips/1" for 127.0.0.1 at 2015-02-18 22:57:45 -0500
+Processing by TripsController#show as HTML
+  Parameters: {"id"=>"1"}
+Completed 500 Internal Server Error in 0ms
+
+NoMethodError (undefined method `[]' for nil:NilClass):
+  app/controllers/trips_controller.rb:4:in `show'
+
+
+  Rendered /home/s/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.4ms)
+  Rendered /home/s/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered /home/s/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /home/s/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (16.7ms)
+
+
+Started GET "/trips/1" for 127.0.0.1 at 2015-02-18 22:57:53 -0500
+Processing by TripsController#show as HTML
+  Parameters: {"id"=>"1"}
+Completed 401 Unauthorized in 0ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/trips/1?ticket=ST-1602235-x6MJp5I9c014iKkTEs7t-vmssoprdapp01" for 127.0.0.1 at 2015-02-18 22:57:53 -0500
+
+
+Started GET "/trips/1" for 127.0.0.1 at 2015-02-18 22:57:53 -0500
+Processing by TripsController#show as HTML
+  Parameters: {"id"=>"1"}
+Completed 401 Unauthorized in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/trips/1?ticket=ST-1602236-ZBHiqlA6BjFLabf3z06e-vmssoprdapp01" for 127.0.0.1 at 2015-02-18 22:57:53 -0500
+
+
+Started GET "/trips/1" for 127.0.0.1 at 2015-02-18 22:57:53 -0500
+Processing by TripsController#show as HTML
+  Parameters: {"id"=>"1"}
+Completed 401 Unauthorized in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/trips/1?ticket=ST-1602237-adpwkhFZsAEoezPrMDwm-vmssoprdapp01" for 127.0.0.1 at 2015-02-18 22:57:53 -0500
+
+
+Started GET "/trips/1" for 127.0.0.1 at 2015-02-18 22:57:53 -0500
+Processing by TripsController#show as HTML
+  Parameters: {"id"=>"1"}
+Completed 401 Unauthorized in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/trips/1?ticket=ST-1602238-yYgiL1lf6DGS3jMtJhey-vmssoprdapp01" for 127.0.0.1 at 2015-02-18 22:57:53 -0500
+
+
+Started GET "/trips/1" for 127.0.0.1 at 2015-02-18 22:57:53 -0500
+Processing by TripsController#show as HTML
+  Parameters: {"id"=>"1"}
+Completed 401 Unauthorized in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/trips/1?ticket=ST-1602239-SLgLTKEbntzVALjTGE1U-vmssoprdapp01" for 127.0.0.1 at 2015-02-18 22:57:53 -0500
+
+
+Started GET "/trips/1" for 127.0.0.1 at 2015-02-18 22:57:54 -0500
+Processing by TripsController#show as HTML
+  Parameters: {"id"=>"1"}
+Completed 401 Unauthorized in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/trips/1?ticket=ST-1602240-ORjbX7TY6O7gJEVjgbok-vmssoprdapp01" for 127.0.0.1 at 2015-02-18 22:57:54 -0500
+
+
+Started GET "/trips/1" for 127.0.0.1 at 2015-02-18 22:57:54 -0500
+Processing by TripsController#show as HTML
+  Parameters: {"id"=>"1"}
+Completed 401 Unauthorized in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/trips/1?ticket=ST-1602241-MGf71UyjmLgNsrsrkMPZ-vmssoprdapp01" for 127.0.0.1 at 2015-02-18 22:57:54 -0500
+
+
+Started GET "/trips/1" for 127.0.0.1 at 2015-02-18 22:59:00 -0500
+Processing by TripsController#show as HTML
+  Parameters: {"id"=>"1"}
+Completed 401 Unauthorized in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/trips/1?ticket=ST-1602269-xuHibGM2bEevEz10J2Va-vmssoprdapp01" for 127.0.0.1 at 2015-02-18 22:59:00 -0500
+
+
+Started GET "/trips/1" for 127.0.0.1 at 2015-02-18 22:59:00 -0500
+Processing by TripsController#show as HTML
+  Parameters: {"id"=>"1"}
+Completed 401 Unauthorized in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/trips/1?ticket=ST-1602270-SSxGYJ2JTDz02IQdycLO-vmssoprdapp01" for 127.0.0.1 at 2015-02-18 22:59:00 -0500
+
+
+Started GET "/trips/1" for 127.0.0.1 at 2015-02-18 22:59:00 -0500
+Processing by TripsController#show as HTML
+  Parameters: {"id"=>"1"}
+Completed 401 Unauthorized in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/trips/1?ticket=ST-1602271-0IWDs0H3ZGK9yosAmlRf-vmssoprdapp01" for 127.0.0.1 at 2015-02-18 22:59:00 -0500
+
+
+Started GET "/trips/1" for 127.0.0.1 at 2015-02-18 22:59:00 -0500
+Processing by TripsController#show as HTML
+  Parameters: {"id"=>"1"}
+Completed 401 Unauthorized in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/trips/1?ticket=ST-1602272-IRh3l7CjShpztkRsEToz-vmssoprdapp01" for 127.0.0.1 at 2015-02-18 22:59:00 -0500
+
+
+Started GET "/trips/1" for 127.0.0.1 at 2015-02-18 22:59:01 -0500
+Processing by TripsController#show as HTML
+  Parameters: {"id"=>"1"}
+Completed 401 Unauthorized in 0ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/trips/1?ticket=ST-1602274-NgKcZFv72YgA6MTnjYjL-vmssoprdapp01" for 127.0.0.1 at 2015-02-18 22:59:01 -0500
+
+
+Started GET "/trips/1" for 127.0.0.1 at 2015-02-18 22:59:01 -0500
+Processing by TripsController#show as HTML
+  Parameters: {"id"=>"1"}
+Completed 401 Unauthorized in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/trips/1?ticket=ST-1602275-c2zybkbZqgUq1L6YEIYs-vmssoprdapp01" for 127.0.0.1 at 2015-02-18 22:59:01 -0500
+
+
+Started GET "/trips/1" for 127.0.0.1 at 2015-02-18 22:59:01 -0500
+Processing by TripsController#show as HTML
+  Parameters: {"id"=>"1"}
+Completed 401 Unauthorized in 0ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/trips/1?ticket=ST-1602276-MrkI1nS2PXeCJdL63Kzd-vmssoprdapp01" for 127.0.0.1 at 2015-02-18 22:59:01 -0500
+
+
+Started GET "/trips/1?ticket=ST-1602276-MrkI1nS2PXeCJdL63Kzd-vmssoprdapp01" for 127.0.0.1 at 2015-02-18 22:59:07 -0500
+
+
+Started GET "/trips/1?ticket=ST-1602282-2g4jAJKhaZmtd4VJ3rXp-vmssoprdapp01" for 127.0.0.1 at 2015-02-18 22:59:07 -0500
+
+
+Started GET "/trips/1" for 127.0.0.1 at 2015-02-18 22:59:07 -0500
+Processing by TripsController#show as HTML
+  Parameters: {"id"=>"1"}
+Completed 500 Internal Server Error in 0ms
+
+NoMethodError (undefined method `pry' for #<Binding:0x007f5519f43f60>):
+  app/controllers/trips_controller.rb:4:in `show'
+
+
+  Rendered /home/s/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.9ms)
+  Rendered /home/s/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.1ms)
+  Rendered /home/s/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /home/s/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (21.9ms)
+
+
+Started GET "/trips/1" for 127.0.0.1 at 2015-02-18 22:59:27 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by TripsController#show as HTML
+  Parameters: {"id"=>"1"}
+Completed 401 Unauthorized in 29609ms (Views: 1.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/trips/1?ticket=ST-1602307-TmXSwyWYZa5qrZFuDznS-vmssoprdapp01" for 127.0.0.1 at 2015-02-18 22:59:57 -0500
+
+
+Started GET "/trips/1" for 127.0.0.1 at 2015-02-18 22:59:57 -0500
+Processing by TripsController#show as HTML
+  Parameters: {"id"=>"1"}
+Completed 401 Unauthorized in 146824ms (Views: 1.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/trips/1?ticket=ST-1602408-jYjecebkhafN57pOkykq-vmssoprdapp01" for 127.0.0.1 at 2015-02-18 23:02:25 -0500
+
+
+Started GET "/trips/1" for 127.0.0.1 at 2015-02-18 23:02:25 -0500
+Processing by TripsController#show as HTML
+  Parameters: {"id"=>"1"}
+Completed 401 Unauthorized in 277256ms (Views: 1.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/trips/1?ticket=ST-1602573-ZuQBCdU6DF0jALHe3vK0-vmssoprdapp01" for 127.0.0.1 at 2015-02-18 23:07:02 -0500
+
+
+Started GET "/trips/1" for 127.0.0.1 at 2015-02-18 23:07:02 -0500
+Processing by TripsController#show as HTML
+  Parameters: {"id"=>"1"}
+Completed 401 Unauthorized in 1001732ms (Views: 1.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/trips/1?ticket=ST-1603126-zP19aHDVtLTFauQ3VaeK-vmssoprdapp01" for 127.0.0.1 at 2015-02-18 23:23:44 -0500
+
+
+Started GET "/trips/1" for 127.0.0.1 at 2015-02-18 23:23:44 -0500
+Processing by TripsController#show as HTML
+  Parameters: {"id"=>"1"}
+Completed   in 861ms
