@@ -11,10 +11,17 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150821164202) do
+ActiveRecord::Schema.define(version: 20150821173728) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "leaders", force: :cascade do |t|
+    t.integer "user_id"
+    t.string  "description"
+  end
+
+  add_index "leaders", ["user_id"], name: "index_leaders_on_user_id", using: :btree
 
   create_table "trips", force: :cascade do |t|
     t.text     "title"
@@ -23,12 +30,20 @@ ActiveRecord::Schema.define(version: 20150821164202) do
     t.date     "date"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "leader_id"
   end
+
+  create_table "trips_users", id: false, force: :cascade do |t|
+    t.integer "trip_id"
+    t.integer "user_id"
+  end
+
+  add_index "trips_users", ["trip_id"], name: "index_trips_users_on_trip_id", using: :btree
+  add_index "trips_users", ["user_id"], name: "index_trips_users_on_user_id", using: :btree
 
   create_table "users", force: :cascade do |t|
     t.string   "name"
     t.integer  "role"
-    t.string   "description"
     t.string   "affiliation"
     t.string   "email"
     t.datetime "created_at",  null: false
