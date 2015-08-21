@@ -1,5 +1,5 @@
-class UsersController < ActionController::Base
-  before_action :find_user, only: [:show, :edit, :destroy, :update]
+class UsersController < ApplicationController
+  before_action :find_user, only: [:show, :destroy, :update]
 
   def index
     @users = User.all.to_json
@@ -10,9 +10,17 @@ class UsersController < ActionController::Base
     render json: @user
   end
 
-  def edit
+  def create
+    binding.pry
+    # POST with params
+    @user = User.new(user_params)
+    if @user.save
+      render json: @user
+    else
+      render_error "user_creation_failed"
+    end
   end
-  
+
   def update
   end
 
