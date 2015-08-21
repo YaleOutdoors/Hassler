@@ -1,9 +1,9 @@
-class UsersController < ApplicationController
+class UsersController < ActionController::Base
   before_action :find_user, only: [:show, :edit, :destroy, :update]
 
   def index
-    @users = Users.all.to_json
-    render @users
+    @users = User.all.to_json
+    render json: @users
   end
 
   def show
