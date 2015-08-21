@@ -1,8 +1,13 @@
-class TripsController < ActionController::Base
-  before_action :find_trip, only: [:show, :destroy, :update]
+class TripsController < ApplicationController
+  before_action :find_trip, except: [:index]
 
   def show
-    render json: @trip
+    render_success @trip
+  end
+
+  def signup
+    @trip.signup(current_user)
+    render_success
   end
 
   private

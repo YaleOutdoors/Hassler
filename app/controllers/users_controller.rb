@@ -3,19 +3,18 @@ class UsersController < ApplicationController
 
   def index
     @users = User.all.to_json
-    render json: @users
+    render_success @users
   end
 
   def show
-    render json: @user
+    render_success @user
   end
 
   def create
-    binding.pry
     # POST with params
     @user = User.new(user_params)
     if @user.save
-      render json: @user
+      render_success @user
     else
       render_error "user_creation_failed"
     end
@@ -26,6 +25,7 @@ class UsersController < ApplicationController
 
   def destroy
     @user.destroy
+    render_success
     # what to return here?
   end
 
@@ -36,6 +36,6 @@ class UsersController < ApplicationController
   end
 
   def user_params
-    params.required(:user).permit(:name, :email, :role, :description, :affiliation)
+    params.required(:user).permit(:name, :email, :role, :affiliation)
   end
 end
