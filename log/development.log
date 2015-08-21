@@ -595,3 +595,11 @@ Started GET "/trips/1" for 127.0.0.1 at 2015-02-18 23:23:44 -0500
 Processing by TripsController#show as HTML
   Parameters: {"id"=>"1"}
 Completed   in 861ms
+  [1m[36mTrip Load (33.3ms)[0m  [1mSELECT "trips".* FROM "trips"[0m
+
+
+Started GET "/trips/1" for 127.0.0.1 at 2015-08-21 12:33:35 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (10.7ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by TripsController#show as HTML
+  Parameters: {"id"=>"1"}
+Completed 401 Unauthorized in 15289ms (Views: 2.7ms | ActiveRecord: 0.0ms)
