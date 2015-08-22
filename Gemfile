@@ -8,6 +8,9 @@ gem 'pg'
 gem 'rails-api'
 gem 'responders'
 
+gem 'doorkeeper'
+gem 'devise'
+
 # bundle exec rake doc:rails generates the API under doc/api.
 gem 'sdoc', '~> 0.4.0',          group: :doc
 
