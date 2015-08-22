@@ -16,7 +16,7 @@ class UsersController < ApplicationController
     if @user.save
       render_success @user
     else
-      render_error "user_creation_failed"
+      render_error("user creation failed", 500)
     end
   end
 
@@ -26,7 +26,6 @@ class UsersController < ApplicationController
   def destroy
     @user.destroy
     render_success
-    # what to return here?
   end
 
   private

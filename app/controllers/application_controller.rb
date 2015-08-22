@@ -3,16 +3,16 @@ class ApplicationController < ActionController::API
   include ActionController::MimeResponds
   include ActionController::StrongParameters
 
-  def render_error msg
+  def render_error(msg, code)
     render json: {
-      error: 1,
       message: msg
-    }
+    },
+    status: code,
+    success: false
   end
 
   def render_success data={}
     render json: {
-      error: 0,
       data: data
     }
   end

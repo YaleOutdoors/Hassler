@@ -14,7 +14,7 @@ class LeadersController < ApplicationController
     if @leader.save
       render_success @leader.full_profile
     else
-      render_error "leader creation failed"
+      render_error("Leader creation failed", 500)
     end
   end
 
