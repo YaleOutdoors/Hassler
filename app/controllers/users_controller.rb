@@ -1,6 +1,22 @@
 class UsersController < ApplicationController
   before_action :find_user, only: [:show, :destroy, :update]
 
+  CLIENT_ID = '584319657310-q4rpinvp1b41shkj889u5q3sf5uiccv7.apps.googleusercontent.com'
+
+  def login
+    # POST /login
+    token = params[:idtoken]
+    validator = GoogleIDToken::Validator.new
+    jwt = validator.check(token, CLIENT_ID)
+    if jwt
+      render_success jwt
+    else
+      render_error("Cannot validate: #{validator.problem}", 401)
+    end
+
+  end
+
+
   def index
     @users = User.all.to_json
     render_success @users
