@@ -50,8 +50,6 @@ GEM
       columnize (= 0.9.0)
     coderay (1.1.0)
     columnize (0.9.0)
-    doorkeeper (3.0.0)
-      railties (>= 3.2)
     erubis (2.7.0)
     globalid (0.3.6)
       activesupport (>= 4.1.0)
@@ -133,7 +131,6 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  doorkeeper
   google-id-token!
   pg
   pry-byebug

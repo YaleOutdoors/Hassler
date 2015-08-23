@@ -8,7 +8,6 @@ gem 'pg'
 gem 'rails-api'
 gem 'responders'
 
-gem 'doorkeeper'
 gem 'google-id-token', git: 'git@github.com:Nerian/google-id-token.git'
 gem 'rack-cors'
 
