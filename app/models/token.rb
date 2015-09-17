@@ -26,7 +26,8 @@ class Token < ActiveRecord::Base
   end
 
   def self.authenticate_user(token_text)
-    t = Token.where(text: token_text);
+    t = Token.where(text: token_text).first;
+    return nil if t.nil?
     User.find(t.user_id)
   end
 

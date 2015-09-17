@@ -8,7 +8,7 @@ class ApplicationController < ActionController::API
   def authenticate
     token = request.headers["hassler-access-token"]
     if token.nil?
-      render_error("Hassler access token not valid", 401)
+      render_error("Hassler access token not valid", 401) and return
     end
     @current_user = Token.authenticate_user(token)
     if @current_user.nil?
