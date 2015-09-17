@@ -9,7 +9,12 @@ class UsersController < ApplicationController
     validator = GoogleIDToken::Validator.new
     jwt = validator.check(token, CLIENT_ID)
     if jwt
-      # access_token = Token.generate_for()
+      user = User.where(email: jwt["email"]).first
+      if user.nil?
+        render_error("#{jwt['email']} not registered user", 401) and return
+      end
+      access_token = Token.generate_for(user.id)
+      jwt.merge!({"access_token" => access_token.text})
       render_success jwt
     else
       render_error("Cannot validate: #{validator.problem}", 401)
