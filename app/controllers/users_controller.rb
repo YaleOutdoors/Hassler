@@ -1,5 +1,6 @@
 class UsersController < ApplicationController
   before_action :find_user, only: [:show, :destroy, :update]
+  skip_before_action :authenticate, only: [:login, :create]
 
   CLIENT_ID = '584319657310-q4rpinvp1b41shkj889u5q3sf5uiccv7.apps.googleusercontent.com'
 

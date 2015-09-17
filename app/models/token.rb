@@ -25,4 +25,9 @@ class Token < ActiveRecord::Base
     t
   end
 
+  def self.authenticate_user(token_text)
+    t = Token.where(text: token_text);
+    User.find(t.user_id)
+  end
+
 end
