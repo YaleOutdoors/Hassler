@@ -8,7 +8,7 @@ gem 'pg'
 gem 'rails-api'
 gem 'responders'
 
-gem 'google-id-token', git: 'git@github.com:Nerian/google-id-token.git'
+gem 'google-id-token', git: 'https://github.com/Nerian/google-id-token.git'
 gem 'rack-cors'
 
 # bundle exec rake doc:rails generates the API under doc/api.
