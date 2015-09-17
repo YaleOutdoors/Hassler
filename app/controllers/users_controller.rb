@@ -1,5 +1,28 @@
 class UsersController < ApplicationController
   before_action :find_user, only: [:show, :destroy, :update]
+  skip_before_action :authenticate, only: [:login, :create]
+
+  CLIENT_ID = '584319657310-q4rpinvp1b41shkj889u5q3sf5uiccv7.apps.googleusercontent.com'
+
+  def login
+    # POST /login
+    token = params[:idtoken]
+    validator = GoogleIDToken::Validator.new
+    jwt = validator.check(token, CLIENT_ID)
+    if jwt
+      user = User.where(email: jwt["email"]).first
+      if user.nil?
+        render_error("#{jwt['email']} not registered user", 401) and return
+      end
+      access_token = Token.generate_for(user.id)
+      data = {"hassler-access-token"=> access_token.text }
+      render_success data
+    else
+      render_error("Cannot validate: #{validator.problem}", 401)
+    end
+
+  end
+
 
   def index
     @users = User.all.to_json

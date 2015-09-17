@@ -3,6 +3,19 @@ class ApplicationController < ActionController::API
   include ActionController::MimeResponds
   include ActionController::StrongParameters
 
+  before_action :authenticate
+
+  def authenticate
+    token = request.headers["hassler-access-token"]
+    if token.nil?
+      render_error("Hassler access token not valid", 401) and return
+    end
+    @current_user = Token.authenticate_user(token)
+    if @current_user.nil?
+      render_error("Hassler access token not valid", 401)
+    end
+  end
+
   def render_error(msg, code)
     render json: {
       message: msg
@@ -15,10 +28,6 @@ class ApplicationController < ActionController::API
     render json: {
       data: data
     }
-  end
-
-  def current_user
-    # todo
   end
 
 end
