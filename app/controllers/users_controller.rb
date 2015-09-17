@@ -9,6 +9,7 @@ class UsersController < ApplicationController
     validator = GoogleIDToken::Validator.new
     jwt = validator.check(token, CLIENT_ID)
     if jwt
+      # access_token = Token.generate_for()
       render_success jwt
     else
       render_error("Cannot validate: #{validator.problem}", 401)
