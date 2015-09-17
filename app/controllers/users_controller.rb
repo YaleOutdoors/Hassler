@@ -15,8 +15,8 @@ class UsersController < ApplicationController
         render_error("#{jwt['email']} not registered user", 401) and return
       end
       access_token = Token.generate_for(user.id)
-      jwt.merge!({"access_token" => access_token.text})
-      render_success jwt
+      data = {"hassler-access-token"=> access_token.text }
+      render_success data
     else
       render_error("Cannot validate: #{validator.problem}", 401)
     end
