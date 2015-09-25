@@ -16,9 +16,10 @@ class ApplicationController < ActionController::API
     end
   end
 
-  def render_error(msg, code)
+  def render_error(msg, code, data = nil)
     render json: {
-      message: msg
+      message: msg,
+      data: data
     },
     status: code,
     success: false

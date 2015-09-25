@@ -12,7 +12,7 @@ class UsersController < ApplicationController
     if jwt
       user = User.where(email: jwt["email"]).first
       if user.nil?
-        render_error("#{jwt['email']} not registered user", 401) and return
+        render_error("#{jwt['email']} not registered user", 401, jwt) and return
       end
       access_token = Token.generate_for(user.id)
       data = {"hassler-access-token"=> access_token.text }
