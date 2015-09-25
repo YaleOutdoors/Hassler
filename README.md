@@ -26,6 +26,19 @@ to expire 4 hours after the last use, but this is still under consideration)
 * Login: `POST /login`: 
   - Parameters: `id_token`, an id_token from a Google OAuth 2 signin
   - Return: `hassler-access-token`, `401` if the access token is bad or the user is not registered
-* Create new user: `POST /users`
-  - Parameters
-  - Return:
+* Create: `POST /users`
+  - 500 if creation failed
+* Index: `GET /users`
+* Show: `GET /users/:id`
+* Update: `PUT /users/:id` (under construction)
+* Destroy: `DELETE /users/:id`
+## Trips
+* Show: `GET /trips/:id`
+* Index: `GET /trips`
+* Signup: `PUT /trips/:id/signup`
+  - Signs up the user making the request for trip `:id`
+* Create: `POST /trips`
+  - 500 if creation failed
+* Update: `PUT /trips/:id` (under construction)
+* Destroy: `DELETE /users/:id`
+
