@@ -1,6 +1,10 @@
 class TripsController < ApplicationController
   before_action :find_trip, except: [:index]
 
+  def index
+    render_success Trip.all
+  end
+
   def show
     render_success @trip
   end
