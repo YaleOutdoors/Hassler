@@ -34,7 +34,9 @@ to expire 4 hours after the last use, but this is still under consideration)
 * Show: `GET /users/:id`
 * Update: `PUT /users/:id` (under construction)
 * Destroy: `DELETE /users/:id`
+
 ## Trips
+
 * Show: `GET /trips/:id`
 * Index: `GET /trips`
 * Signup: `PUT /trips/:id/signup`
