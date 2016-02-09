@@ -1,5 +1,6 @@
 class TripsController < ApplicationController
   before_action :find_trip, except: [:index]
+  skip_before_action :authenticate, only: [:index, :show]
 
   def index
     render_success Trip.all

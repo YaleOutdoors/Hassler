@@ -21,6 +21,8 @@ to expire 4 hours after the last use, but this is still under consideration)
 **Public Endpoints** (No access token required)
 * Login: `POST /login`
 * Create new user: `POST /users`
+* Trip Index `GET /trips`
+* Trip Show `GET /trip/:id`
 
 ## Users
 * Login: `POST /login`: 
